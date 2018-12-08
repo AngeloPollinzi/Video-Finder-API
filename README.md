@@ -1,2 +1,2 @@
 # Video-Finder-API
-Open-source API to find Video in given Web page
+Open-source API to find main video in given web page
