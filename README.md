@@ -14,7 +14,7 @@ Assuming you have node and npm properly installed on the machine, you have to:
 - Then `npm start` to get the app running on local host
 
 # Usage
-The usage of Video-Finder is pretty simple, just copy and paste your web page **URL** on the serch bar and submit the output request, that will be given after some seconds.
+The usage of Video-Finder is pretty simple, just copy and paste your web page **URL** on the serch bar first, then submit the output request by clicking the "Extract" button, the response will be given after some seconds.
 ![Alt text](WebContent/img/screen1.png "Main page")
 Output example:
 ![Alt text](WebContent/img/screen2.png "Output page")
