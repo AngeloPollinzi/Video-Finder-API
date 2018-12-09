@@ -15,6 +15,6 @@ Assuming you have node and npm properly installed on the machine, you have to:
 
 # Usage
 The usage of Video-Finder is pretty simple, just copy and paste your web page **URL** on the serch bar and submit the output request, that will be given after some seconds.
-![Alt text](/img/screen1.jpg "Main Page")
+![Alt text](/img/screen1.png "Main Page")
 Output example:
-![Alt text](/img/screen2.jpg "Main Page")
+![Alt text](/img/screen2.png "Main Page")
