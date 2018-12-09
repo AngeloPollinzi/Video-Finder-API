@@ -2,9 +2,9 @@
   "name": "video-finder-api",
   "version": "1.0.0",
   "description": "Tool for automated video data extraction",
-  "main": "server.js",
+  "main": "server",
   "scripts": {
-    "start": "node start"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
