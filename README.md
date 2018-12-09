@@ -1,10 +1,20 @@
 # Video-Finder-API
-Open-source API to find main video in given web page
+**Open-source API** to find main video in given web page
 
 # Description
-Video-Finder offers the opportunity to extract the direct link and many other attributes of a video from a web page. 
-It is based on the Node Puppeteer library for Headless Chrome, thanks to the potential of this tool, Video-Finder-API performs a completely automated data extraction on the page.
+**Video-Finder** offers the opportunity to extract the direct link and many other attributes of a video from a web page. 
+It is based on the Node **Puppeteer** library for Headless Chrome, thanks to the potential of this tool, Video-Finder-API performs a completely automated data extraction on the page.
+
+# Installation
+Assuming you have node and npm properly installed on the machine, you have to:
+
+- Download the code.
+- Navigate to inside the project folder on terminal, where you would hopefully see a package.json file.
+- Do an `npm install` for installing all the project dependencies
+- Then `npm start` to get the app running on local host
 
 # Usage
-The use of the API is very simple, just paste the URL of the page and wait for the output in response.
-To lauch the application...
+The usage of Video-Finder is pretty simple, just copy and paste your web page **URL** on the serch bar and submit the output request, that will be given after some seconds.
+![Alt text](/img/screen1.jpg "Main Page")
+Output example:
+![Alt text](/img/screen2.jpg "Main Page")
