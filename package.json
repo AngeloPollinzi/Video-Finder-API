@@ -4,7 +4,7 @@
   "description": "Tool for automated video data extraction",
   "main": "index.html",
   "scripts": {
-    "start": "node Controller/server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
