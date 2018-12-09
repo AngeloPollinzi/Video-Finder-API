@@ -1,0 +1,24 @@
+{
+  "name": "video-finder-api",
+  "version": "1.0.0",
+  "description": "Tool for automated video data extraction",
+  "main": "index.html",
+  "scripts": {
+    "start": "node Controller/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeloPollinzi/Video-Finder-API.git"
+  },
+  "keywords": [
+    "VideoFinder",
+    "VideoScraper",
+    "API"
+  ],
+  "author": "Angelo Pollinzi",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AngeloPollinzi/Video-Finder-API/issues"
+  },
+  "homepage": "https://github.com/AngeloPollinzi/Video-Finder-API#readme"
+}
