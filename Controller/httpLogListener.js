@@ -20,13 +20,13 @@ async function capture(response){
 					jsonHandler.getOutput(output,content);
 					var jsonToString=JSON.stringify(output);
 					if(jsonToString && !jsonHandler.isEmpty(output)){
-						fs.appendFile("../log/outputs",jsonToString+"\n", function(err) {
+						fs.appendFile("log/outputs",jsonToString+"\n", function(err) {
 							if(err) {return console.log(err);}
 						}); 
 					}else if(jsonHandler.isEmpty(output)){
 						var url = textContent.match(/(https?[:/]+(www\.)?[-\]_\.~!\*'();:@&=+$,\/?%#\[A-z0-9]+\.(?:mp4|m3u8|webm|ogg)[-\]_\.~!\*'();:@&=+$,\/?%#\[A-z0-9]*)/)[0];
 						if(url){
-							fs.appendFile("../log/outputs",url+"\n", function(err) {
+							fs.appendFile("log/outputs",url+"\n", function(err) {
 								if(err) { return console.log(err);}
 							}); 
 						}

@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+.json-visual .json-array .json-field .label {
+    background: #eef1ee;
+}
+.json-visual .label {
+    display: inline-block;
+    width: auto;
+    padding: 6px 4px;
+    border: 1px solid #ccc;
+    word-wrap: break-word;
+    color: #3B7333;
+    background: #f8f8f8;
+    border-radius: 4px;
+    font-size: 17px;
+    white-space: inherit;
+}
+
+#submitter{
+	width: 100%;
+	height: 100%;
+}

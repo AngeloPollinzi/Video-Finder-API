@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -20,22 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
-	<style type="text/css">
-	.json-visual .json-array .json-field .label {
-    background: #eef1ee;
-}
-.json-visual .label {
-    display: inline-block;
-    width: auto;
-    padding: 6px 4px;
-    border: 1px solid #ccc;
-    word-wrap: break-word;
-    color: #3B7333;
-    background: #f8f8f8;
-    border-radius: 4px;
-    font-size: 17px;
-    white-space: inherit;
-}</style>
+    <link href="css/index.css" rel="stylesheet">
   </head>
 
   <body>
@@ -58,10 +43,10 @@
             <form>
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input type="search" class="form-control form-control-lg" placeholder="Paste here page url...">
+                  <input id="pageUrlContainer" type="search" class="form-control form-control-lg" placeholder="Paste here page url...">
                 </div>
                 <div class="col-12 col-md-3">
-                  <button type="submit" class="btn btn-block btn-lg btn-primary">Extract</button>
+                  <button id="submitter" type="button" class="btn btn-primary">Extract</button>
                 </div>
               </div>
             </form>
@@ -124,7 +109,7 @@
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Video-Finder-API 2018. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
@@ -152,7 +137,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+	<script src="js/getData.js"></script>
   </body>
 
 </html>
