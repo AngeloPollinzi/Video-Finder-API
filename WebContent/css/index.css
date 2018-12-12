@@ -1,9 +1,15 @@
 @charset "ISO-8859-1";
+
+html, body {
+    height: 100%;
+    font-family: "KlavikaLight",sans-serif;
+}
+
 .json-visual .json-array .json-field .label {
     background: #eef1ee;
 }
 .json-visual .label {
-    display: inline-block;
+    display: block;
     width: auto;
     padding: 6px 4px;
     border: 1px solid #ccc;
@@ -18,4 +24,53 @@
 #submitter{
 	width: 100%;
 	height: 100%;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.json-visual .json-string .json-content, .json-visual .json-value .json-content {
+    word-wrap: break-word;
+}
+.json-visual .json-content {
+    padding-top: 4px;
+    font-size: 17px;
+}
+.json-visual .json-field {
+    padding: 16px 0;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#loading { 
+	display: none; 
+ 	border: 10px solid #f3f3f3; /* Light grey */
+	border-top: 10px solid blue;
+	border-right: 10px solid green;
+	border-bottom: 10px solid red;
+	border-left: 10px solid pink;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 2s linear infinite;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

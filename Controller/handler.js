@@ -16,7 +16,7 @@ var extractVideoFromPage = async function extractVideoFromPage(pageUrl){
 		let all_outputs; 		//array dei risultati trovati
 		
 		// creo un'istanza di un browser chrome
-		const browser = await puppeteer.launch({headless:false});
+		const browser = await puppeteer.launch();
 		
 		// creo una nuova pagina nel browser
 		const page = await browser.newPage();
@@ -76,7 +76,7 @@ async function analysis(doc,flag){
 	}else if(flag === 1){
 		var dynamicResults=[];
 		HttpLogListener.listen(doc); 	
-		await doc.waitFor(30000);					
+		await doc.waitFor(10000);					
 		HttpLogListener.stop(doc);
 		saveLogContentIn(dynamicResults);
 		results = dynamicResults;

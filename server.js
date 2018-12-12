@@ -1,9 +1,10 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
+var url = require('url');
 var VideoExtractor=require("./Controller/handler.js");
 
-http.createServer(function(req, res){
+http.createServer(async function(req, res){
     if(req.url === "/"){
         fs.readFile("WebContent/index.html", "UTF-8", function(err, html){
             res.writeHead(200, {"Content-Type": "text/html"});
@@ -29,18 +30,14 @@ http.createServer(function(req, res){
         var fileStream = fs.createReadStream(imagePath);
         res.writeHead(200, {"Content-Type": "image/jpg"});
         fileStream.pipe(res);
-    }else if(req.url.match("\/getData") && req.method == 'POST'){
-    	console.log("POST");
-    	var pageURL=''
-		var output={};
-    	req.on('data', function (data) {
-    		pageURL += data;
-    	});
-    	req.on('end', function () {
-    		output = VideoExtractor.extractVideoFromPage(pageURL);
-    	});
-//    	res.writeHead(200, {'Content-Type': 'text/html'});
-//    	res.end('post received');
+    }else if(req.url.match("\/getData") && req.method == 'GET'){
+    	var pageURL = ''
+		var output = {};
+    	var queryParameters = url.parse(req.url, true).query;
+    	pageURL = decodeURIComponent(queryParameters["&pageUrl"]);
+		output = await VideoExtractor.extractVideoFromPage(pageURL);
+		res.writeHead(200, {'Content-Type': 'application/json'});
+    	res.end(JSON.stringify(output));
     }else{
         res.writeHead(404, {"Content-Type": "text/html"});
         res.end("No Page Found");
